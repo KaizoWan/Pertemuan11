@@ -9,16 +9,28 @@ package com.mycompany.pertemuan11;
  *
  * @author A-15
  */
-class Mobil implements Kendaraan {
-    private String merek;
+public class Mobil implements Kendaraan{
+
+    private String merk;
     private String model;
 
-    public Mobil(String merek, String model) {
-        this.merek = merek;
+    public Mobil(String merk, String model) {
+        this.merk = merk;
         this.model = model;
     }
-
-    public void info() {
-        System.out.println("Mobil: " + merek + " " + model);
+    
+    public String getMerk() {
+        return merk;
     }
+
+    public String getModel() {
+        return model;
+    }
+
+    @Override
+    public void info() {
+        System.out.println("Mobil: " + merk + " " + model);
+    }
+    
+    
 }

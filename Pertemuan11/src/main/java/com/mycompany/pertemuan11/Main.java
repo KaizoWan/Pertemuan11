@@ -13,9 +13,10 @@ package com.mycompany.pertemuan11;
 // Main Class
 public class Main {
     public static void main(String[] args) {
-        MobilBaru mobilBaru = new MobilBaru("Toyota", "Avanza", "3 tahun");
-        MobilBekas mobilBekas = new MobilBekas("Honda", "Civic", 2018, 200000000);
-        Dealer dealer = new Dealer("Mobilindo", mobilBaru, mobilBekas);
-        dealer.info();
+        MobilBaru mobilBaru = new MobilBaru("5 Tahun", "Mazda", "RX7");
+        MobilBekas mobilBekas = new MobilBekas(2014, 4000000, "Brio", "Honda");
+        Dealer dealer = new Dealer("Info mobil", mobilBaru, mobilBekas);
+        dealer.info();;
+        
     }
 }

@@ -10,7 +10,8 @@ package com.mycompany.pertemuan11;
  * @author A-15
  */
 // Kelas untuk Dealer Mobil
-class Dealer {
+public class Dealer {
+
     private String nama;
     private MobilBaru mobilBaru;
     private MobilBekas mobilBekas;

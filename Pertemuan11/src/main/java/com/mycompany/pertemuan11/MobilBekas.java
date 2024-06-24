@@ -10,26 +10,28 @@ package com.mycompany.pertemuan11;
  * @author A-15
  */
 class MobilBekas extends Mobil {
+
     private int tahun;
     private double harga;
 
-    public MobilBekas (int tahun, double harga, String merek, String model) {
-        super (merek, model);
+    public MobilBekas(int tahun, double harga, String merk, String model) {
+        super(merk, model);
         this.tahun = tahun;
         this.harga = harga;
-    }   
+    }
 
-    public int getTahun () {
+    public int getTahun() {
         return tahun;
     }
 
-    public double getHarga () {
+    public double getHarga() {
         return harga;
     }
 
     @Override
-    public void info(){
+    public void info() {
         super.info();
-        System.out.println("Ini adalah mobil kijang bekas");
+        System.out.println("Mobil Bekas: " + getMerk() + " " + getModel() + " (" + tahun + ")");
     }
+
 }

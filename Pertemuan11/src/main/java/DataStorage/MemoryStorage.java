@@ -10,7 +10,7 @@ package DataStorage;
  * @author A-15
  */
 // Implementasi pada memory
-public class MemoryStorage implements DataStorage {
+public class MemoryStorage implements DataStorege {
     private String data;
 
     @Override

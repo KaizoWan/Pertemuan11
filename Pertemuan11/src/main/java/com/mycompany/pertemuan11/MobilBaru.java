@@ -9,11 +9,11 @@ package com.mycompany.pertemuan11;
  *
  * @author A-15
  */
-class MobilBaru extends Mobil {
+class MobilBaru extends Mobil{
     private String garansi;
 
-    public MobilBaru(String merek, String model, String garansi) {
-        super(merek, model);
+    public MobilBaru(String garansi, String merk, String model) {
+        super(merk, model);
         this.garansi = garansi;
     }
 
@@ -21,7 +21,10 @@ class MobilBaru extends Mobil {
         return garansi;
     }
 
+    @Override
     public void info() {
-        System.out.println("Mobil Baru: " + getMerek() + " " + getModel() + "(Garansi: " + garansi + ")");
+        System.out.println("Mobil Baru: " + getMerk() + " " + getModel() + "(Garansi: " + garansi + ")");
     }
+    
+    
 }
